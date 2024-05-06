@@ -20,14 +20,6 @@ function ProductsList() {
     getMovie();
   }, []); // Empty dependency array to run effect only once
 
-  const handleDelete = async (id) => {
-    try {
-      await deleteDoc(doc(db, "movies", id));
-      setAllMov(allMov.filter(movie => movie.id !== id));
-    } catch (error) {
-      console.error("Error removing document: ", error);
-    }
-  };
   const MovieList = ({ movies }) => {
     return (
       <ul className="flex flex-col gap-3">
@@ -49,7 +41,8 @@ function ProductsList() {
                 <div className="card-actions ">
                   <div>
                     <a
-                      href="https://t.me/fayzullokhonweb"
+                      href={movie.watchUrl}
+                      target="_blank"
                       className="btn btn-primary  text-gray-50 "
                     >
                       <span className="font-mono text-base">Watch</span>{" "}
@@ -58,10 +51,7 @@ function ProductsList() {
                   </div>
 
                   <div>
-                    <button
-                     onClick={() => handleDelete(movie.id)}
-                      className="btn btn-primary  text-gray-50"
-                    >
+                    <button className="btn btn-primary  text-gray-50">
                       <span className="font-mono text-base">I saw</span>{" "}
                       <MdDeleteOutline className="w-6 h-6" />
                     </button>
