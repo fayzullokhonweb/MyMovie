@@ -1,7 +1,6 @@
 import React from "react";
 import ProductsList from "../components/ProductsList";
 import { useState } from "react";
-import SearchMov from "../components/SearchMov";
 
 function Home() {
   const [hovered, setHovered] = useState(false);
@@ -28,7 +27,6 @@ function Home() {
         </div>
         <div className="w-2/4">
           <div className="fixed">
-            <SearchMov />
           </div>
         </div>
       </div>
