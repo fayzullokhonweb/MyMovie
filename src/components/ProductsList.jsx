@@ -4,7 +4,7 @@ import { MdDeleteOutline } from "react-icons/md";
 function ProductsList({}) {
   return (
     <ul className="flex flex-col gap-y-7">
-      <li className="hover:shadow-2xl">
+      <li className="hover:shadow-2xl hover:rounded-xl">
         <div className="card card-side bg-base-100 shadow-md">
           <figure>
             <img
@@ -14,36 +14,12 @@ function ProductsList({}) {
           </figure>
           <div className="card-body">
             <div className="mb-auto">
-              <h2 className="card-title text-2xl">New movie is released!</h2>
-              <h2 className="card-title text-2xl mb-14">Title</h2>
-              <div className="rating">
-                <input
-                  type="radio"
-                  name="rating-1"
-                  className="mask mask-star"
-                />
-                <input
-                  type="radio"
-                  name="rating-1"
-                  className="mask mask-star"
-                />
-                <input
-                  type="radio"
-                  name="rating-1"
-                  className="mask mask-star"
-                  checked
-                />
-                <input
-                  type="radio"
-                  name="rating-1"
-                  className="mask mask-star"
-                />
-                <input
-                  type="radio"
-                  name="rating-1"
-                  className="mask mask-star"
-                />
-              </div>
+              <h2 className="card-title text-2xl mb-2 ">
+                Spider-Man: No Way Home (2021)
+              </h2>
+              <h2 className="text-base ">Worldwide gross: $2,923,706,026</h2>
+              <h2 className="text-base ">Domestic gross: $785,221,649</h2>
+              <h2 className="text-base">rating</h2>
             </div>
             <div className="card-actions ">
               <div>
@@ -55,6 +31,7 @@ function ProductsList({}) {
                   <PiYoutubeLogoFill className="w-6 h-6" />
                 </a>
               </div>
+
               <div>
                 <button className="btn btn-primary  text-gray-50">
                   <span className="font-mono text-base">I saw</span>{" "}
@@ -65,7 +42,7 @@ function ProductsList({}) {
           </div>
         </div>
       </li>
-      <li className="hover:shadow-2xl">
+      <li className="hover:shadow-2xl hover:rounded-xl">
         <div className="card card-side bg-base-100 shadow-md">
           <figure>
             <img
@@ -75,36 +52,12 @@ function ProductsList({}) {
           </figure>
           <div className="card-body">
             <div className="mb-auto">
-              <h2 className="card-title text-2xl">New movie is released!</h2>
-              <h2 className="card-title text-2xl mb-14">Title</h2>
-              <div className="rating">
-                <input
-                  type="radio"
-                  name="rating-1"
-                  className="mask mask-star"
-                />
-                <input
-                  type="radio"
-                  name="rating-1"
-                  className="mask mask-star"
-                />
-                <input
-                  type="radio"
-                  name="rating-1"
-                  className="mask mask-star"
-                  checked
-                />
-                <input
-                  type="radio"
-                  name="rating-1"
-                  className="mask mask-star"
-                />
-                <input
-                  type="radio"
-                  name="rating-1"
-                  className="mask mask-star"
-                />
-              </div>
+              <h2 className="card-title text-2xl mb-2 ">
+                Spider-Man: No Way Home (2021)
+              </h2>
+              <h2 className="text-base ">Worldwide gross: $2,923,706,026</h2>
+              <h2 className="text-base ">Domestic gross: $785,221,649</h2>
+              <h2 className="text-base">rating</h2>
             </div>
             <div className="card-actions ">
               <div>
@@ -116,6 +69,7 @@ function ProductsList({}) {
                   <PiYoutubeLogoFill className="w-6 h-6" />
                 </a>
               </div>
+
               <div>
                 <button className="btn btn-primary  text-gray-50">
                   <span className="font-mono text-base">I saw</span>{" "}
@@ -126,7 +80,7 @@ function ProductsList({}) {
           </div>
         </div>
       </li>
-      <li className="hover:shadow-2xl">
+      <li className="hover:shadow-2xl hover:rounded-xl">
         <div className="card card-side bg-base-100 shadow-md">
           <figure>
             <img
@@ -136,36 +90,12 @@ function ProductsList({}) {
           </figure>
           <div className="card-body">
             <div className="mb-auto">
-              <h2 className="card-title text-2xl">New movie is released!</h2>
-              <h2 className="card-title text-2xl mb-14">Title</h2>
-              <div className="rating">
-                <input
-                  type="radio"
-                  name="rating-1"
-                  className="mask mask-star"
-                />
-                <input
-                  type="radio"
-                  name="rating-1"
-                  className="mask mask-star"
-                />
-                <input
-                  type="radio"
-                  name="rating-1"
-                  className="mask mask-star"
-                  defaultChecked
-                />
-                <input
-                  type="radio"
-                  name="rating-1"
-                  className="mask mask-star"
-                />
-                <input
-                  type="radio"
-                  name="rating-1"
-                  className="mask mask-star"
-                />
-              </div>
+              <h2 className="card-title text-2xl mb-2 ">
+                Spider-Man: No Way Home (2021)
+              </h2>
+              <h2 className="text-base ">Worldwide gross: $2,923,706,026</h2>
+              <h2 className="text-base ">Domestic gross: $785,221,649</h2>
+              <h2 className="text-base">rating</h2>
             </div>
             <div className="card-actions ">
               <div>
@@ -177,6 +107,7 @@ function ProductsList({}) {
                   <PiYoutubeLogoFill className="w-6 h-6" />
                 </a>
               </div>
+
               <div>
                 <button className="btn btn-primary  text-gray-50">
                   <span className="font-mono text-base">I saw</span>{" "}
@@ -187,7 +118,7 @@ function ProductsList({}) {
           </div>
         </div>
       </li>
-      <li className="hover:shadow-2xl">
+      <li className="hover:shadow-2xl hover:rounded-xl">
         <div className="card card-side bg-base-100 shadow-md">
           <figure>
             <img
@@ -197,36 +128,12 @@ function ProductsList({}) {
           </figure>
           <div className="card-body">
             <div className="mb-auto">
-              <h2 className="card-title text-2xl">New movie is released!</h2>
-              <h2 className="card-title text-2xl mb-14">Title</h2>
-              <div className="rating">
-                <input
-                  type="radio"
-                  name="rating-1"
-                  className="mask mask-star"
-                />
-                <input
-                  type="radio"
-                  name="rating-1"
-                  className="mask mask-star"
-                />
-                <input
-                  type="radio"
-                  name="rating-1"
-                  className="mask mask-star"
-                  checked
-                />
-                <input
-                  type="radio"
-                  name="rating-1"
-                  className="mask mask-star"
-                />
-                <input
-                  type="radio"
-                  name="rating-1"
-                  className="mask mask-star"
-                />
-              </div>
+              <h2 className="card-title text-2xl mb-2 ">
+                Spider-Man: No Way Home (2021)
+              </h2>
+              <h2 className="text-base ">Worldwide gross: $2,923,706,026</h2>
+              <h2 className="text-base ">Domestic gross: $785,221,649</h2>
+              <h2 className="text-base">rating</h2>
             </div>
             <div className="card-actions ">
               <div>
@@ -238,6 +145,7 @@ function ProductsList({}) {
                   <PiYoutubeLogoFill className="w-6 h-6" />
                 </a>
               </div>
+
               <div>
                 <button className="btn btn-primary  text-gray-50">
                   <span className="font-mono text-base">I saw</span>{" "}
