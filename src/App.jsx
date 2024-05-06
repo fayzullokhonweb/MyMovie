@@ -12,7 +12,7 @@ import { GlobalContext } from "./context/useGlobal";
 // firebase
 import { onAuthStateChanged } from "firebase/auth";
 import { auth } from "./firebase/firebaseConfig";
-import { collection, query, where, getDocs } from "firebase/firestore";
+import { collection, getDocs } from "firebase/firestore";
 import { db } from "./firebase/firebaseConfig";
 
 // action
@@ -77,11 +77,12 @@ function App() {
     });
 
     async function getData() {
+    const allMov = [];
       const querySnapshot = await getDocs(collection(db, "movies"));
-      querySnapshot.forEach((doc) => {
-
-        console.log(doc.id, " => ", doc.data());
+      querySnapshot.docs.forEach((item) => {
+        allMov.push({ id: item.id, ...item.data() });
       });
+      console.log(allMov);
     }
     getData();
   }, []);
